@@ -56,7 +56,12 @@ export default async function Job() {
                 </RefLink>
                 <div className="flex flex-col items-start">
                   <h3 className="text-xl font-semibold">{job.name}</h3>
-                  <p>{job.jobTitle}</p>
+                  <p>
+                    {job.jobTitle}
+                    {job.contractType && (
+                      <span className="ml-2 text-sm text-zinc-500">({job.contractType})</span>)}
+                  </p>
+                  
                   <time className="text-sm text-zinc-500 mt-2 tracking-widest uppercase">
                     {formatDate(job.startDate)} -{" "}
                     {job.endDate ? (

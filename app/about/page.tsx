@@ -39,8 +39,8 @@ export default async function About() {
           <div className="order-2 lg:order-none">
             <Slide>
               <h1 className="font-incognito font-semibold tracking-tight sm:text-5xl text-3xl lg:leading-tight basis-1/2 mb-8">
-                I&apos;m {profile?.fullName ?? "John Doe"}. I live in{" "}
-                {profile?.location ?? "'X'"}, where I build the future.
+                I&apos;m {profile?.fullName ?? "John Doe"}. Based out of {" "}
+                {profile?.location ?? "'X'"}.
               </h1>
 
               <div className="dark:text-zinc-400 text-zinc-600 leading-relaxed">

@@ -41,6 +41,7 @@ export const jobQuery = groq`*[_type == "job"] | order(_createdAt desc){
   "logo": logo.asset->url,
   url,
   description,
+  contractType,
   startDate,
   endDate,
 }`;

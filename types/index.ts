@@ -39,11 +39,24 @@ export type JobType = {
   _id: string;
   name: string;
   jobTitle: string;
+  contractType: "full-time" | "part-time" | "contract" | "internship" | "freelance";
   logo: string;
   url: string;
   description: string;
   startDate: string;
   endDate: string;
+};
+
+export type ContractType = {
+  contractType: "full-time" | "part-time" | "contract" | "internship" | "freelance";
+  _id: string;
+  name: string;
+  jobTitle: string;
+  logo: string;
+  url: string;
+  description: string;
+  startDate: string;
+  endDate?: string;
 };
 
 export type ProjectType = {

@@ -36,6 +36,22 @@ const job = {
       description: "Write a brief description about this role",
     },
     {
+      name: "contractType",
+      title: "Contract Type",
+      type: "string",
+      options: {
+        list: [
+          { title: "Full-time", value: "full-time" },
+          { title: "Part-time", value: "part-time" },
+          { title: "Contract", value: "contract" },
+          { title: "Internship", value: "internship" },
+          { title: "Freelance", value: "freelance" },
+        ],
+        layout: "radio",
+      },
+      description: "Specify the nature of the employment",
+    },
+    {
       name: "startDate",
       title: "Start Date",
       type: "date",
