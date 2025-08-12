@@ -20,7 +20,7 @@ export const socialLinks = [
   {
     id: 1,
     name: "GitHub",
-    url: "https://github.com/Evavic44",
+    url: "https://github.com/zakjanzi",
     icon: BiLogoGithub,
     status: "social",
   },
@@ -34,7 +34,7 @@ export const socialLinks = [
   {
     id: 3,
     name: "Linkedin",
-    url: "https://linkedin.com/in/victorekeawa",
+    url: "https://www.linkedin.com/in/zakaria-j-714816111/",
     icon: BiLogoLinkedinSquare,
     status: "social",
   },
