@@ -5,7 +5,7 @@ import type { ProfileType } from "@/types";
 import { PortableText } from "@portabletext/react";
 import { BiEnvelope, BiLinkExternal, BiSolidDownload } from "react-icons/bi";
 import { CustomPortableText } from "../components/shared/CustomPortableText";
-import Heroes from "../components/pages/Heroes";
+// import Heroes from "../components/pages/Heroes";
 import Usage from "../components/pages/Usage";
 import { Slide } from "../animation/Slide";
 import { sanityFetch } from "@/lib/sanity.client";
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Learn more about my skills, experience and technical background",
   openGraph: {
-    title: "About | Victor Eke",
+    title: "About | Zak J.",
     url: "https://victoreke.com/about",
     description:
       "Learn more about my skills, experience and technical background",
@@ -54,9 +54,12 @@ export default async function About() {
                 )}
               </div>
             </Slide>
+                    <Slide delay={0.14}>
+          <Usage />
+        </Slide>
           </div>
 
-          <aside className="flex flex-col lg:justify-self-center justify-self-start gap-y-8 lg:order-1 order-none mb-12">
+          <aside className="flex flex-col lg:justify-self-center justify-self-start gap-y-8 lg:order-1 order-none">
             <Slide delay={0.1}>
               <div className="sticky top-10">
                 {profile?.profileImage.image ? (
@@ -81,7 +84,7 @@ export default async function About() {
                       href="https://www.craft.me/s/WQpQF3jrPIodXp"
                       className="flex items-center justify-center text-center gap-x-2 basis-[90%] dark:bg-primary-bg bg-zinc-100 border border-transparent dark:hover:border-zinc-700 hover:border-zinc-200 rounded-md py-2 text-lg font-incognito font-semibold"
                     >
-                      View Résumé <BiLinkExternal className="text-base" />
+                      View Resumé <BiLinkExternal className="text-base" />
                     </RefLink>
                     <a
                       href={`${profile?.resumeURL}?dl=${profile?.fullName}-resume.pdf`}
@@ -107,10 +110,7 @@ export default async function About() {
             </Slide>
           </aside>
         </section>
-        <Slide delay={0.14}>
-          <Usage />
-        </Slide>
-        <Heroes />
+        {/* <Heroes /> */}
       </div>
     </main>
   );

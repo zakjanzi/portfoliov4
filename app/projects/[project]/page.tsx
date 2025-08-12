@@ -71,7 +71,7 @@ export default async function Project({ params }: Props) {
                 }`}
               >
                 <BiLinkExternal aria-hidden="true" />
-                {project.projectUrl ? "Live URL" : "Coming Soon"}
+                {project.projectUrl ? "Live URL" : ""}
               </a>
 
               <a
